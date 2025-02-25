@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Embeds</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+            background-image: url('https://www.shutterstock.com/shutterstock/videos/3635538155/thumb/9.jpg?ip=x480');
+            background-size: cover;
+            background-position: center;
+        }
+        h1 {
+            color: #000000;
+            font-size: 32px;
+            font-family: 'Georgia', serif;
+        }
+        p {
+            font-size: 18px;
+            max-width: 800px;
+        }
+        .media-container {
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+        }
+        video, audio {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h2>Media Embeds</h2>
+    <div class="media-container">
+        <h1>Video</h1>
+        <video width="320" height="240" controls>
+            <source src="videoplayback.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video> 
+
+        <h1>Audio</h1>
+        <audio controls>
+            <source src="audio.mp3" type="audio/mpeg">
+            Your browser does not support the audio tag.
+        </audio>
+    </div>
+</body> 
+</html>

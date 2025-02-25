@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Landing Page</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f9f9f9;
+        color: #333;
+    }
+    header b{
+        font-size:40px;
+    }
+    h1{
+        margin:center;
+    }
+    h2{
+        color:#00998c;
+        font-size:40px;
+    }
+    header {
+        background-color: #00998c;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        font-size: 24px;
+    }
+    nav {
+        display: flex;
+        justify-content: center;
+        background-color: #00998c;
+        padding: 10px;
+    }
+    nav a {
+        color: white;
+        padding: 10px 20px;
+        font-size:20px;
+    }
+   
+    section {
+        padding: 20px;
+        max-width: 800px;
+        margin: auto;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: #00998c;
+        margin-top: 20px;
+    }
+    ol {
+        padding-left: 20px;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    fieldset {
+        border: none;
+    }
+    input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    button {
+        background-color: #00998c;
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    button:hover {
+        background-color:#00998c;
+    }
+    footer {
+        text-align: center;
+        background-color: #00998c;
+        color: white;
+        padding: 15px;
+        margin-top: 20px;
+    }
+    footer a {
+        color: #000000;
+        text-decoration: none;
+        margin: 0 10px;
+    }
+    
+</style>
+<body>
+    <!-- Header Section-->
+    <header><b>Rebel Foods</b></header>
+    <!-- Navigation Section-->
+    <nav>
+        <a href="#About">About</a>
+        <a href="#Services">Services</a>
+        <a href="#Contact">Contact</a>
+    </nav>
+    <!-- Main Content-->
+    <section id="About">
+        <h2>Excellent Food Meets Great Tech  !</h2>
+        <h2>About</h2>
+        <p>The world's largest chain of internet restaurants powered by an operating system for building and scaling brands globally.
+            We believe in finding the right balance between exquisite culinary craftsmanship and technological infrastructure.
+            With a common goal to identify different food patterns of the consumer - lunch, dinner, snacks, weekend gatherings and all 
+            such food missions, our brands are born as an answer to these food missions.</p>    
+    </section>
+
+    <section id="Services">
+        <h2>Services</h2>
+        <ol>
+            <li>Culinary Innovation</li>
+            <li>Food Technology</li>
+            <li>Franchise Stores</li>
+            <li>Oven Story Pizza</li>
+            <li>Preferred Locations for physical outlets (FOFO)</li>
+            <li>Revenue Channels</li>
+        </ol>
+    </section>
+
+    <section id="Contact">
+        <h2>Get In Touch</h2>
+        <form>
+            <fieldset>
+                <legend>Name</legend>
+            <label for="name"></label>
+            <input type="text" id="name" name="name" required placeholder="Your Name">
+        </fieldset>
+        <fieldset>
+            <legend>Email</legend>
+            <label for="email"></label>
+            <input type="email" id="email" name="email" required placeholder="Your Email">
+        </fieldset>
+        <fieldset>
+            <legend>Message</legend>
+            <label for="message"></label>
+            <input type="text" id="message" name="message" required placeholder="Your Message">
+            </fieldset>
+            <br><button type="submit">Send Message</button>
+        </form>
+    </section>
+
+</body>
+<!-- Footer Section-->
+<footer>
+    <p>&copy; 2025 Rebel Foods Limited. All rights reserved.</p>
+    <p>Follow us on: 
+        <a href="https://facebook.com" target="_blank">Facebook</a> 
+        <a href="https://twitter.com" target="_blank">Twitter</a>  
+        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+        <a href="https://instagram.com" target="_blank">Instagram</a>
+    </p>
+</footer>
+
+</html>
