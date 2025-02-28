@@ -1,0 +1,27 @@
+:root {
+    --main-bg-color: #fffaf0;
+    --main-text-color: #5a3e36;
+    --accent-color: #e6b8b8;
+}
+.dark-theme {
+    --main-bg-color: #2b2b2b;
+    --main-text-color: #f5e6e8;
+    --accent-color: #c57b7b;
+}
+body {
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+button {
+    background-color: var(--accent-color);
+    border: none;
+    padding: 10px 20px;
+    color: var(--main-text-color);
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background 0.3s;
+}

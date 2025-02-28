@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floral Skincare</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Floral Skincare</h1>
+        <button id="theme-toggle">Switch Theme</button>
+        <p>Discover the natural beauty of floral-infused skincare for radiant, healthy skin.</p>
+    </div>
+
+    <script>
+        const toggleButton = document.getElementById("theme-toggle");
+        toggleButton.addEventListener("click", () => {
+            document.body.classList.toggle("dark-theme");
+        });
+    </script>
+</body>
+</html>

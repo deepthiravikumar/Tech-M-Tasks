@@ -1,0 +1,56 @@
+body {
+    font-family: 'Lora', sans-serif;
+    background-color: #FAF8F5;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+}
+header {
+    text-align: center;
+    background-color: #A8C3A8;
+    padding: 20px;
+    color: white;
+}
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5em;
+    margin: 0;
+}
+header p {
+    font-size: 1.2em;
+    margin-top: 5px;
+}
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+.about p{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    color:chocolate;
+}
+h2 {
+    color: #A8C3A8;
+    font-family: 'Playfair Display', serif;
+    font-size: 2em;
+}
+.product-card {
+    background-color: rgb(124, 158, 124);
+    padding: 20px;
+    margin: 20px auto;
+    max: width 100%;
+}
+.product-card h3 {
+    color: #a35f28;
+    font-size: 1.5em;
+}
+.product-card p {
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+footer {
+    background-color: #A8C3A8;
+    text-align: center;
+    padding: 15px;
+    color: white;
+}

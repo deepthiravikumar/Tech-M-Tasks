@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    color: #030031;
+    background: url("https://i.pinimg.com/736x/b3/07/6e/b3076ed909259852a2293eba0a466e4b.jpg") no-repeat center/cover;
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+h1, h2, h3 {
+    color: #000337;
+}
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+h2 {
+    font-size: 2rem;
+    margin-top: 20px;
+}
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+p {
+    margin-bottom: 1rem;
+}

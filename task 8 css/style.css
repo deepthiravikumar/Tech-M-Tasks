@@ -1,0 +1,43 @@
+body {
+    font-family: 'Georgia', serif;
+    text-align: center;
+    padding: 50px;
+    background-color: #e7ceff;
+}
+h1{
+    color:#ff3300;
+}
+a {
+    color: #e63946;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: bold;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+a:hover {
+    color: #f4a261;
+    text-shadow: 2px 2px 5px rgba(244, 162, 97, 0.5);
+    text-decoration: underline;
+}
+a:active {
+    color: #ff0062;
+}
+a:visited {
+    color: #00b4a5;
+}
+input {
+    width: 300px;
+    padding: 12px;
+    font-size: 1rem;
+    border: 2px solid #b56576;
+    outline: none;
+    background: rgba(255, 192, 213, 0.8);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+    border-color: #00ffdd;
+    box-shadow: 0 0 10px rgba(231, 111, 81, 0.5);
+    background: rgb(235, 253, 255);
+
+}

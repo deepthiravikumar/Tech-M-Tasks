@@ -1,0 +1,40 @@
+body{
+    background-color:lavender;
+    text-align: center;
+}
+h1{
+    color:rgb(185, 147, 255);
+    font-size: 60px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+p{
+    font-size: 30px;
+    font-style: italic;
+
+}
+h2{
+    color:rgb(185, 147, 255);
+    font-size: 45px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+figure {
+    display: inline-block;
+    width: 320px;
+    background: rgb(217, 191, 247);
+    padding: 10px;
+    border-radius: 20px;
+    margin: 15px;
+}
+figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+figcaption {
+    font-size: 14px;
+    color: #313131;
+    margin-top: 8px;
+}
+figure:hover {
+    transform: scale(1.05);
+}
