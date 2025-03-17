@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .image-container {
+            position: relative;
+            text-align: center;
+        }
+        .image-container img {
+            width: 200px;
+            height: auto;
+            transition: box-shadow 0.3s ease;
+        }
+        .image-container:hover img {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        .like-btn {
+            margin-top: 5px;
+            padding: 5px 10px;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .like-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <div class="image-container">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNSgGbqmow7OzxHkEu_F2x9Z91uA61XZaEHg&s" alt="Image1">
+            <button class="like-btn">Like (<span class="likeCount">0</span>)</button>
+        </div>
+        <div class="image-container">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKf6AIxapOMdJYTcj1FSWE5-UPSm99lxns5w&s" alt="Image2">
+            <button class="like-btn">Like (<span class="likeCount">0</span>)</button>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.like-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                let likeCountSpan = this.querySelector('.likeCount');
+                let count = parseInt(likeCountSpan.textContent, 10);
+                likeCountSpan.textContent = count + 1;
+            });
+        });
+    </script>
+</body>
+</html>

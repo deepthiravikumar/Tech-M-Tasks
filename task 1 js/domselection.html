@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Selection</title>
+</head>
+<body>
+    <h1>Promotions </h1>
+    <div id="promoBanner">Welcome to out site... </div>
+</body>
+<script>
+    let banner=document.getElementById("promoBanner")
+    let promoMessage="Welcome To our Site"
+    let discountPercent=60
+    let isUserLoggedIn=true
+    if(isUserLoggedIn){
+        banner.innerText='You have a discount of 60%'
+    }else{
+        banner.innerText=promoMessage
+    }
+    console.log(typeof banner,banner)
+    console.log(typeof promoMessage,promoMessage)
+    console.log(typeof discountPercent, discountPercent)
+    console.log(typeof isUserLoggedIn,isUserLoggedIn)
+</script>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operations</title>
+</head>
+<body>
+    <h2>Shopping Cart</h2>
+    <p id="total">Total Prices = </p>
+    <p id="shippingcost">Shipping cost = </p>
+    <p id="totalshippingcost">Total (including shipping) = </p>
+</body>
+<script>
+    const prices=[9, 4, 3.75];
+    const total = prices.reduce((sum, price) => sum + price, 0);
+    const freeShippingThreshold = 30;
+    const shippingCost = (total >= freeShippingThreshold) ? 0 : 20; 
+    const totalShippingCost = total + shippingCost;
+    document.getElementById("total").innerHTML = `Total Prices = $${total.toFixed(2)}`;
+    document.getElementById("shippingcost").innerHTML = `Shipping Cost = $${shippingCost.toFixed(2)}`;
+    document.getElementById("totalshippingcost").innerHTML = `Final Total (Including Shipping) = $${totalShippingCost.toFixed(2)}`;
+</script>
+</html>

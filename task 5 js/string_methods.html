@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Normalizer</title>
+    <style>
+        body { 
+        text-align: center; 
+        margin: 50px; 
+        }
+        input, button {
+        padding: 10px; 
+        margin: 10px; 
+        }
+    </style>
+</head>
+<body>
+    <h2>Chat Normalizer</h2>
+    <input type="text" id="userMessage" placeholder="Enter your message">
+    <button onclick="normalizeMessage()">Submit</button>
+    <p id="output"></p>
+</body>
+<script>
+    function normalizeMessage() {
+        let message = document.getElementById("userMessage").value.trim();
+        if (message.length === 0) {
+            alert("Please enter a message.");
+            return;
+        }
+        let normalizedMessage = message.length < 10 ? message.toUpperCase() : message.toLowerCase();
+        document.getElementById("output").innerText = `Normalized Message: ${normalizedMessage}`;
+    }
+</script>
+</html>
