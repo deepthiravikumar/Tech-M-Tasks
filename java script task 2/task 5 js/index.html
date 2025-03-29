@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async/Await Fetch Example</title>
+</head>
+<body>
+    <h1>User Dashboard</h1>
+    <div id="user-container"></div>
+<script>
+    async function loadUsersAndPosts() {
+    const userContainer = document.getElementById("user-container");
+    const userResponse = await fetch("https://jsonplaceholder.typicode.com/users");
+    if (!userResponse.ok) return; 
+    const users = await userResponse.json();
+    const userPostsPromises = users.map(async (user) => {
+        const postResponse = await fetch(`https://jsonplaceholder.typicode.com/posts?userId=${user.id}`);
+        if (!postResponse.ok) return { ...user, posts: [] }; 
+        const posts = await postResponse.json();
+        return { ...user, posts };
+    });
+    const usersWithPosts = await Promise.all(userPostsPromises);
+    userContainer.innerHTML = usersWithPosts.map(user => `
+        <div>
+            <h3>${user.name} (${user.email})</h3>
+            <ul>
+                ${user.posts.slice(0, 5).map(post => `<li>${post.title}</li>`).join('')}
+            </ul>
+        </div>
+    `).join('');
+    }
+    loadUsersAndPosts();
+
+</script>
+</body>
+</html>

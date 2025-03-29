@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discount System</title>
+</head>
+<body>
+<script>
+    // discount.js
+
+// Step 1: Define user details
+const isLoggedIn = true; // Change to false to test
+const membershipLevel = "Gold"; // Can be "Silver", "Gold", "Platinum"
+const isCouponValid = true; // Change to false to test
+
+// Step 2: Determine membership-based discount using a ternary operator
+const membershipDiscount = 
+  membershipLevel === "Platinum" ? 30 : 
+  membershipLevel === "Gold" ? 20 : 
+  10;
+
+// Step 3: Determine final discount based on conditions
+let finalDiscount = 0;
+
+if (isLoggedIn) {
+  if (isCouponValid) {
+    finalDiscount = membershipDiscount;
+    document.body.innerHTML = `<h2>Discount Applied: ${finalDiscount}%</h2>`;
+} else {
+    console.log("Invalid coupon. No discount applied.");
+  }
+} else {
+  console.log("Please log in to receive a discount.");
+}
+
+</script>
+</body>
+</html>
